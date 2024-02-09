@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dast7vfkpcyd0"]
+
+[ext_resource type="Script" path="res://btnPlay.gd" id="1_4hgqd"]
+
+[node name="main" type="Node2D"]
+
+[node name="btnPlay" type="Button" parent="."]
+offset_left = 176.0
+offset_top = 24.0
+offset_right = 507.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 62
+text = "play"
+script = ExtResource("1_4hgqd")
+
+[node name="btnPlay2" type="Button" parent="."]
+offset_left = 170.0
+offset_top = 232.0
+offset_right = 501.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 62
+text = "exit"
+script = ExtResource("1_4hgqd")
+
+[connection signal="pressed" from="btnPlay2" to="btnPlay2" method="_on_pressed"]
